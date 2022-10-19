@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "task": "HTML I",
+        "description": "This is a dummy task"
+    },
+    {
+        "id": 2,
+        "task": "CSS",
+        "description": "This is a dummy task"
+    },
+    {
+        "id": 3,
+        "task": "Responsive design",
+        "description": "This is a dummy task"
+    },
+    {
+        "id": 4,
+        "task": "Git",
+        "description": "This is a dummy task"
+    },
+    {
+        "id": 5,
+        "task": "JavaScript I",
+        "description": "This is a dummy task"
+    },
+    {
+        "id": 6,
+        "task": "JavaScript II",
+        "description": "This is a dummy task"
+    }
+]

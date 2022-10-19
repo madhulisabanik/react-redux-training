@@ -15,17 +15,68 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 20px;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.listStyle {
+  list-style: none;
+}
+
+.checkbox-container {
+  margin: auto;
+  padding: 18px;
+	border: 1px solid #e5e5e5;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	width: 400px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.checkbox-group {
+	border: 1px solid #e5e5e5;
+	padding: 10px;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.checkbox-group.checked {
+	background-color: #0d6efd;
+	box-shadow: rgba(13, 110, 253, 0.25) 0px 8px 24px;
+}
+
+.create-task-box {
+  width: 67%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* resize: vertical; */
+  margin: 20px 20px 20px 0;
+}
+
+.create-task-submit-btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-task-submit-btn:hover {
+  background-color: #45a049;
 }
 
 @keyframes App-logo-spin {

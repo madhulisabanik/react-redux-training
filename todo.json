@@ -1,0 +1,54 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "task": "HTML I",
+      "description": "This is a dummy task",
+      "isChecked": false
+    },
+    {
+      "id": 2,
+      "task": "CSS",
+      "description": "This is a dummy task",
+      "isChecked": false
+    },
+    {
+      "id": 3,
+      "task": "Responsive design",
+      "description": "This is a dummy task",
+      "isChecked": false
+    },
+    {
+      "id": 4,
+      "task": "Git",
+      "description": "This is a dummy task",
+      "isChecked": false
+    },
+    {
+      "id": 5,
+      "task": "JavaScript I",
+      "description": "This is a dummy task",
+      "isChecked": false
+    },
+    {
+      "id": 6,
+      "task": "JavaScript II",
+      "description": "This is a dummy task",
+      "isChecked": false
+    }
+  ],
+  "enqueries": [
+    {
+      "id": 1,
+      "query": "hello world"
+    },
+    {
+      "id": 2,
+      "query": "hi"
+    },
+    {
+      "id": 915,
+      "query": "Test Data"
+    }
+  ]
+}

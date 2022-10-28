@@ -39,7 +39,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
-	width: 400px;
+	width: 500px;
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -77,6 +77,29 @@
 
 .create-task-submit-btn:hover {
   background-color: #45a049;
+}
+
+.enquery-btn {
+  background-color: #24a0ed;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.enquery-btn:hover {
+  background-color: #1181e9;
+}
+
+.link {
+  text-decoration: none;
+  color: wheat;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: aquamarine;
 }
 
 @keyframes App-logo-spin {

@@ -70,7 +70,7 @@ export default function Todo(props) {
                     {item.isChecked ? <i className="fa-solid fa-check"></i> : <input type="checkbox" id={item.id} onClick={handleChecked} />}
                     <li>{item.task}</li> - <li>{item.description}</li>
                     {/* <li><input onClick={() => {console.log(item.id); setFormVisibilityState(true);}} type="submit" value="Enquery" id={item.id} /></li> */}
-                    <li><button onClick={() => setForm((prev) => !prev)}>Submit</button></li>
+                    <li><button onClick={() => setForm((prev) => !prev)}>Enquire</button></li>
                 </ul>
             </div>
         )
@@ -81,14 +81,16 @@ export default function Todo(props) {
             <div>
                 <input type="text" value={task} placeholder="Create new task..." className="create-task-box" onChange={handleChange} />
                 <input type="submit" value="Submit" className="create-task-submit-btn" onClick={handleClick} />
+
+                {
+                    form ? <div>
+                        <input type="text" value={enquery} placeholder="Post enquery..." className="create-task-box" onChange={handleEnquery}/>
+                        <input type="submit" value="Submit" className="enquery-btn" onClick={handleFormSubmit}/>
+                    </div> : null
+                }
+
                 {todoList}
             </div>
-            {
-                form ? <div>
-                    <input type="text" value={enquery} placeholder="Post enquery..." className="create-task-box" onChange={handleEnquery}/>
-                    <input type="submit" value="Submit" className="create-task-submit-btn" onClick={handleFormSubmit}/>
-                </div> : null
-            }
         </>
     );
 }

@@ -99,7 +99,7 @@ export default function Todo(props) {
                     {item.isChecked ? <i className="fa-solid fa-check"></i> : <input type="checkbox" id={item.id} onClick={handleChecked} />}
                     <li>{item.task}</li> - <li>{item.description}</li>
                     {/* <li><input onClick={() => {console.log(item.id); setFormVisibilityState(true);}} type="submit" value="Enquery" id={item.id} /></li> */}
-                    <li><button onClick={() => setForm((prev) => !prev)}>Enquire</button></li>
+                    <li><button class="btn btn-secondary" onClick={() => setForm((prev) => !prev)}>Enquire</button></li>
                 </ul>
             </div>
         )

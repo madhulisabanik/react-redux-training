@@ -11,6 +11,8 @@ import {
 import Enquery from './components/Enquery';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
+import FoodItem from './components/foodItem/FoodItemView';
+import FoodItemDetailsView from './components/foodItem/FoodItemDetailsView';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
   {
     path: "/enquery",
     element: <Enquery />
+  },
+  {
+    path: "/food-items",
+    element: <FoodItem />
+  },
+  {
+    path: "/food-item/:itemId/:type",
+    element: <FoodItemDetailsView />
   }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));

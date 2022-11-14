@@ -1,7 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
-
+import { useState, useEffect } from 'react';
 
 export default function Enquery() {
   const [enqueryList, setEnqueryList] = useState([])
@@ -30,7 +28,6 @@ export default function Enquery() {
         </div>
     )
   });
-  
   
   return (
     <div>{queryList}</div>

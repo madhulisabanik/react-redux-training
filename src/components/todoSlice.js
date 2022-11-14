@@ -10,6 +10,7 @@ export const todoSlice = createSlice({
     reducers: {
         fetchAllTodos: (state, action) => {
             state.todoData = [...action.payload];
+            console.log('state -->', state)
         },
         addNewTodo: (state, action) => {
             console.log(action.payload)

@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
 } from "react-router-dom";
 import Enquery from './components/Enquery';
 import { store } from './app/store';

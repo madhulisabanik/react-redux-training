@@ -59,7 +59,7 @@
     {
       "id": 1,
       "title": "Dosa",
-      "img": "dosa.png",
+      "img": "dosa.jpg",
       "description": "Dosa is the ever-popular South Indian breakfast of crispy crepes made with fermented rice and lentil batter.",
       "price": "$5",
       "ingredients": "Contrary to popular belief, Lorem Ipsum is not simply random text.",
@@ -68,7 +68,7 @@
     {
       "id": 2,
       "title": "Ice Cream",
-      "img": "icecream.png",
+      "img": "Ice-Cream.jpg",
       "description": "Dosa is the ever-popular South Indian breakfast of crispy crepes made with fermented rice and lentil batter.",
       "price": "$15",
       "ingredients": "Contrary to popular belief, Lorem Ipsum is not simply random text.",
@@ -77,7 +77,7 @@
     {
       "id": 3,
       "title": "Cake",
-      "img": "cake.png",
+      "img": "cake.jpg",
       "description": "Dosa is the ever-popular South Indian breakfast of crispy crepes made with fermented rice and lentil batter.",
       "price": "$10",
       "ingredients": "Contrary to popular belief, Lorem Ipsum is not simply random text.",

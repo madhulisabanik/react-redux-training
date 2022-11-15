@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
 import { Link } from "react-router-dom";
+import Header from "../Header";
 import { selectFoodItemsList, fetchAllFoodItems } from "./foodItemSlice"
 
 export default function FoodItemView() {
@@ -16,7 +17,7 @@ export default function FoodItemView() {
         .then((finalResponse) => {
             dispatch(fetchAllFoodItems([...finalResponse]))
         })
-    }, [])
+    }, [dispatch])
 
     const handleClick = (event) => {
         let itemId = event.target.id
@@ -26,10 +27,10 @@ export default function FoodItemView() {
     const foodList = foodItemListData.map((item) => {
         return(
             <div key={item.id}>
-                <ul class="list-group">
-                    <li class="list-group-item">
+                <ul className="list-group">
+                    <li className="list-group-item">
                         <Link to={`/food-item/${item.id}/details`}>{item.title}</Link>
-                        <button class="btn btn-primary float-right" id={item.id} onClick={handleClick}>Details</button>
+                        <button className="btn btn-primary float-right" id={item.id} onClick={handleClick}>Details</button>
                     </li>
                 </ul>
             </div>
@@ -37,10 +38,13 @@ export default function FoodItemView() {
     })
 
     return (
-        <div className="checkbox-container">
-            <h2>List of Food Items</h2>
-            {foodList}
-            <Link to="/" class="btn btn-info">Back</Link>
-        </div>
+        <>
+            <Header />
+            <div className="checkbox-container">
+                <h2>List of Food Items</h2>
+                {foodList}
+                <Link to="/" className="btn btn-info">Back</Link>
+            </div>
+        </>
     )
 }

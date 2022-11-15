@@ -6,9 +6,7 @@ import Todo from './components/Todo';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Header />
-      </header>
+      <Header />
       <div className="checkbox-container">
         <Todo todoData={TodoData}/>
       </div>

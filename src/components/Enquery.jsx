@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 import { useState, useEffect } from 'react';
 
 export default function Enquery() {
@@ -30,6 +31,12 @@ export default function Enquery() {
   });
   
   return (
-    <div>{queryList}</div>
+    <>
+      <Header />
+      <div className="checkbox-container">
+        <h3><strong>List of Enqueries</strong></h3>
+        {queryList}
+      </div>
+    </>
   )
 }

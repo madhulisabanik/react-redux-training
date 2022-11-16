@@ -8,6 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Enquery from './components/Enquery';
+import Country from './components/country/country';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
 import FoodItem from './components/foodItem/FoodItemView';
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/food-item/:itemId/:type",
     element: <FoodItemDetailsView />
+  },
+  {
+    path: "/contries",
+    element: <Country />
   }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
